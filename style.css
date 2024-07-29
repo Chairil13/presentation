@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  cursor: url(cursor.png), auto;
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#particles-js {
+  background: linear-gradient(-45deg, #ff6b6b, #73ffcc, #45b7d1, #ffbe0b);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+:root {
+  --background: #f6b265;
+  --glow-rgb: 239 42 201;
+}
+
+.container p {
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.container p span.typed-text {
+  font-weight: bold;
+  color: #006c8a;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bps {
+  color: #006c8a;
+  text-decoration: underline;
+}
+
+sup {
+  vertical-align: super;
+  font-size: small;
+}
+
+img {
+  width: 100%;
+}
+
+.container-judul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.judul {
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  color: white;
+  width: 65%;
+}
+
+.judul1 {
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+body {
+  padding: 4rem 2rem 2rem;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  font-family: "Patrick Hand";
+  display: grid;
+  grid: 2rem auto/repeat(2, 50%);
+  grid-column-gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+body .folder {
+  grid-column: 1/-1;
+}
+
+.folder {
+  margin: 1rem auto;
+  max-width: 55rem;
+  width: 100%;
+  scrollbar-height: none;
+}
+
+.folder ::-webkit-scrollbar {
+  background: transparent;
+  display: none;
+}
+
+p,
+li {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+li {
+  line-height: 1.3rem;
+}
+
+.tab {
+  font-family: "Patrick Hand";
+  text-transform: uppercase;
+  line-height: 0.8;
+  display: inline-block;
+  margin-left: -35px;
+  filter: drop-shadow(0px -3px 2px rgba(0, 0, 0, 0.05));
+  border: none;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  margin-right: 4rem;
+  background: var(--background);
+  white-space: nowrap;
+  cursor: pointer;
+  background: var(--background);
+}
+.tab:focus {
+  outline: none;
+}
+.tab:focus span {
+  border-bottom: 2px solid;
+  border-radius: 0;
+}
+.tab:first-of-type {
+  margin-left: 30px;
+}
+.tab div {
+  background: var(--background);
+  padding: 6px 0;
+  position: relative;
+  z-index: 10;
+}
+.tab span {
+  display: inline-block;
+  border: 2px solid transparent;
+  padding: 6px 15px 6px;
+  border-radius: 5px;
+  z-index: 5;
+  position: relative;
+  font-size: 140%;
+  color: #ffffff;
+  min-width: 6rem;
+}
+.tab:before,
+.tab:after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  background: var(--background);
+  border-radius: 8px 8px 0 0;
+  width: 30px;
+  top: 0;
+}
+.tab:before {
+  right: -16px;
+  transform: skew(25deg);
+  border-radius: 0 8px 0 0;
+}
+.tab:after {
+  transform: skew(-25deg);
+  left: -16px;
+  border-radius: 8px 0 0 0;
+}
+.tab.active {
+  z-index: 50;
+  position: relative;
+}
+.tab.active span {
+  background: #006c8a;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.content {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+}
+.content #tab-1 {
+  display: block;
+}
+.content:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+}
+.content__inner {
+  font-family: "Yomogi", sans-serif;
+  display: none;
+  background: var(--background);
+  border-radius: inherit;
+  padding: 1rem;
+  filter: drop-shadow(0px -2px 2px rgba(0, 0, 0, 0.1));
+  z-index: 5;
+}
+
+.page {
+  padding: 1.5rem;
+  border-radius: 2px;
+  min-height: 20rem;
+  line-height: 160%;
+  background-color: #f9f9f9;
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.15));
+  background-image: linear-gradient(#e4e4e4 1px, transparent 1px);
+  background-size: 8% 8%, 2px 2px;
+}
+
+.tabs {
+  padding: 2rem 0 0 0;
+  width: 100%;
+  margin: 0 0.5rem;
+  overflow-x: auto;
+  width: calc(100% - 1rem);
+  white-space: nowrap;
+}
+
+.container-end {
+  text-align: center;
+}
+
+.home1,
+.home2,
+.home3,
+.home4,
+.chat {
+  width: 50%;
+}
+
+.pengenalan {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.judul-analisis {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}

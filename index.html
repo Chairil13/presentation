@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project Akhir - ByteBrain AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Yomogi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="folder">
+      <div class="container">
+        <p>
+          Welcome <span class="typed-text"></span
+          ><span class="cursor">&nbsp;</span>
+        </p>
+      </div>
+
+      <div class="container-judul">
+        <div class="judul">
+          Platform Aplikasi AI Berbasis Natural Language Processing (NLP) dan
+          Game Edukasi untuk Menfasilitasi Pembelajaran Interaktif Siswa SMK
+          Negeri 7 Ambon
+        </div>
+      </div>
+      <div class="judul1">
+        Chairil Ali <br />200102121 <br />Sistem Informasi <br /><br />Institut
+        Teknologi dan Bisnis Stikom Ambon
+      </div>
+      <div class="tabs">
+        <button class="tab active" onclick="openTab(event, 'tab-1')">
+          <div><span>Introduction</span></div>
+        </button>
+        <button class="tab" onclick="openTab(event, 'tab-2')">
+          <div><span>Project Manager</span></div>
+        </button>
+        <button class="tab" onclick="openTab(event, 'tab-3')">
+          <div><span>Requirement Analysis</span></div>
+        </button>
+        <button class="tab" onclick="openTab(event, 'tab-4')">
+          <div><span>System Design</span></div>
+        </button>
+        <button class="tab" onclick="openTab(event, 'tab-5')">
+          <div><span>Implementation & Unit Testing</span></div>
+        </button>
+        <button class="tab" onclick="openTab(event, 'tab-6')">
+          <div><span>Integration & System Testing</span></div>
+        </button>
+        <button class="tab" onclick="openTab(event, 'tab-7')">
+          <div><span>Deployment & Maintenance</span></div>
+        </button>
+        <button class="tab" onclick="openTab(event, 'tab-8')">
+          <div><span>End</span></div>
+        </button>
+      </div>
+      <div class="content">
+        <div class="content__inner" id="tab-1">
+          <div class="page">
+            <div class="pengenalan">Latar Belakang Masalah</div>
+            <br />
+            <p>
+              Pendidikan di era digital telah mengalami transformasi yang
+              signifikan, terutama dengan berkembangnya teknologi yang semakin
+              canggih. SMK Negeri 7 Ambon sebagai salah satu institusi
+              pendidikan yang berada di tengah-tengah perubahan ini, tidak
+              terkecuali dari tantangan-tantangan yang dihadapi dalam
+              memfasilitasi pembelajaran yang sesuai dengan perkembangan zaman
+              serta kebutuhan siswa yang beragam. Metode pembelajaran
+              konvensional yang telah lama diterapkan mungkin tidak lagi memadai
+              dalam menghadapi tantangan pendidikan saat ini. Kurangnya
+              keterlibatan siswa dan kesesuaian dengan gaya belajar individu
+              menjadi perhatian utama dalam upaya meningkatkan kualitas
+              pembelajaran.
+            </p>
+            <br />
+            <p>
+              Di samping itu, kemajuan pesat dalam bidang kecerdasan buatan (AI)
+              dan pemrosesan bahasa alami (NLP) memberikan peluang baru dalam
+              meningkatkan efektivitas pembelajaran. Teknologi AI, khususnya
+              NLP, telah menunjukkan kemampuannya dalam memahami dan memproses
+              bahasa manusia dengan tingkat akurasi yang semakin tinggi.
+              Penggunaan aplikasi berbasis NLP dalam konteks pendidikan
+              menjanjikan kemampuan untuk memberikan respons yang lebih personal
+              dan sesuai dengan kebutuhan siswa. Dengan demikian, aplikasi AI
+              berbasis NLP dapat menjadi solusi yang potensial untuk
+              meningkatkan interaksi antara siswa dan materi pembelajaran, serta
+              memfasilitasi pembelajaran yang lebih efektif dan menyenangkan
+            </p>
+            <br />
+            <p>
+              Selain teknologi AI, pendekatan pembelajaran berbasis game juga
+              telah menjadi tren yang populer dalam pendidikan. Game edukasi
+              telah terbukti efektif dalam meningkatkan keterlibatan siswa dan
+              memfasilitasi pemahaman konsep yang kompleks dengan cara yang
+              menyenangkan. Integrasi elemen permainan dalam proses pembelajaran
+              tidak hanya meningkatkan motivasi siswa, tetapi juga memungkinkan
+              mereka untuk belajar dengan cara yang lebih interaktif dan
+              intuitif
+            </p>
+            <br />
+            <p>
+              Melihat potensi yang dimiliki oleh teknologi AI, khususnya NLP,
+              dan pendekatan pembelajaran berbasis game, pengembangan platform
+              aplikasi yang menggabungkan kedua aspek tersebut menjadi sebuah
+              inovasi yang menarik. Dengan memperhatikan konteks pendidikan
+              lokal yang unik di Ambon dan kebutuhan siswa SMK Negeri 7 Ambon,
+              pengembangan platform aplikasi AI berbasis NLP dan game edukasi
+              diharapkan dapat memberikan kontribusi positif dalam meningkatkan
+              kualitas pembelajaran di sekolah tersebut.
+            </p>
+            <br />
+            <div class="pengenalan">Identifikasi Masalah</div>
+            <br />
+            <p>
+              Proses Identifikasi masalah dalam konteks SMK Negeri 7 Ambon
+              yaitu:
+            </p>
+            <ul>
+              <li>
+                1. Minat Belajar Siswa, tantangan utama adalah meningkatkan
+                minat belajar siswa terhadap materi pembelajaran. Sering kali,
+                pendekatan konvensional kurang mampu menangkap minat siswa,
+                sehingga menyebabkan kebosanan dan kurangnya motivasi belajar.
+              </li>
+              <li>
+                2. Ketersediaan Materi Pembelajaran, beberapa materi
+                pembelajaran mungkin sulit diakses atau sulit mendapatkan
+                referensi tambahan. Hal ini dapat menghambat proses pembelajaran
+                efektif.
+              </li>
+              <li>
+                3. Kesesuaian dengan Kebutuhan Siswa, setiap siswa memiliki
+                kecepatan dan gaya belajar yang berbeda. Oleh karena itu,
+                penting untuk menyediakan pembelajaran yang dapat disesuaikan
+                dengan kebutuhan dan tingkat pemahaman masing-masing siswa.
+              </li>
+              <li>
+                4. Ketersediaan tools belajar yang pintar dan menarik, kurangnya
+                edukasi mengenai kecerdasan buatan sehingga sebagian besar Siswa
+                belum memiliki pengetahuan mengenai teknologi ini.
+              </li>
+            </ul>
+            <br />
+            <div class="pengenalan">Identifikasi Stakeholder</div>
+            <br />
+            <ul>
+              <li>
+                1. Siswa SMK Negeri 7 Ambon, Stakeholder utama adalah siswa SMK
+                Negeri 7 Ambon yang akan menjadi pengguna langsung dari platform
+                aplikasi AI berbasis NLP dan game edukasi ini. Para Siswa akan
+                menggunakannya sebagai alat pembelajaran yang pintar untuk
+                memperdalam pemahaman mereka tentang materi pelajaran.
+              </li>
+              <li>
+                2. Guru dan staf pengajar, para guru dan staf pengajar di SMK
+                Negeri 7 Ambon menjadi stakeholder penting karena mereka akan
+                menggunakan platform ini sebagai alat bantu dalam mengajar
+                maupun mendaptakan informasi yang relevan mengenai materi
+                pelajaran.
+              </li>
+              <li>
+                3. Administrasi sekolah, termasuk kepala sekolah dan staf
+                administrasi, memiliki kepentingan dalam melihat dampak
+                penggunaan platform ini terhadap hasil belajar siswa dan
+                efisiensi dalam proses pembelajaran.
+              </li>
+              <li>
+                4. Pengembang aplikasi dan game, tim pengembang yang bertanggung
+                jawab untuk menciptakan dan memelihara platform ini merupakan
+                stakeholder kunci. Tim perlu memastikan bahwa aplikasi dan game
+                yang dibuat dapat memenuhi kebutuhan pengguna dan berfungsi
+                dengan baik.
+              </li>
+              <li>
+                5. Orang tua siswa, orang tua siswa juga merupakan stakeholder
+                penting karena mereka akan tertarik untuk mengetahui bagaimana
+                platform ini dapat meningkatkan keterlibatan dan prestasi
+                akademis anak-anak mereka. Mereka juga dapat memberikan masukan
+                tentang penggunaan platform ini di rumah.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content__inner" id="tab-2">
+          <div class="page">
+            <!-- project manager -->
+          </div>
+        </div>
+        <div class="content__inner" id="tab-3">
+          <div class="page">
+            <!-- requirement analysis -->
+            <img src="images/analis1.png" alt="" /><br /><br />
+            <div class="judul-analisis">Analisis kebutuhan</div>
+            <p>
+              Analisis kebutuhan memliki tujuan untuk menganalisis kebutuhan apa
+              saja yang dibutuhkan untuk membangun sebuah sistem. Dalam
+              menganalisis kebutuhan sistem akan membahas kebutuhan pengguna dan
+              kebutuhan sistem itu sendiri. Untuk mengumpulkan data pada
+              penelitian ini peneliti menggunakan teknik pengumpulan data
+              observasi dan wawancara.
+            </p>
+            <p>
+              Kegiatan observasi serta wawancara dilakukan dengan tujuan agar
+              dapat mengetahui proses pembelajaran yang berlangsung, prosedur
+              yang ada, dan data-data yang terkait. Dari proses tersebut juga
+              diharapkan dapat mengetahui perlu atau tidaknya perubahan atau
+              penambahan sistem.
+            </p>
+            <p>
+              Observasi diawali dengan mengamati langsung perilaku dan aktivitas
+              siswa SMA Negeri 1 Ambon dalam pembelajaran dan mengerjakan tugas
+              sekolah. Penulis mengunjungi beberapa kelas yang berbeda untuk
+              melihat secara langsung bagaimana siswa berinteraksi dengan materi
+              pelajaran dan mengatasi hambatan-hambatan yang mereka hadapi.
+              Melalui observasi ini, peneliti dapat mengidentifikasi pola-pola
+              umum dalam cara siswa belajar dan area-area di mana mereka
+              membutuhkan bantuan tambahan.
+            </p>
+            <p>
+              Selanjutnya, peneliti melakukan serangkaian wawancara dengan guru
+              dan siswa SMA Negeri 1 Ambon. Dalam wawancara dengan guru,
+              peneliti bertujuan untuk memahami perspektif mereka tentang
+              tantangan yang dihadapi siswa dalam mengerjakan tugas dan peluang
+              untuk pengembangan aplikasi yang dapat membantu mengatasi
+              tantangan tersebut, peneliti juga meminta saran tentang fitur
+              seperti apa yang dibutuhkan untuk memudahkan proses pembelajaran.
+              Sedangkan dalam wawancara dengan siswa, peneliti ingin
+              mendengarkan langsung pengalaman mereka dalam belajar dan
+              mengerjakan tugas sekolah, serta mengetahui harapan dan preferensi
+              mereka terhadap sebuah aplikasi pendidikan. peneliti juga meminta
+              saran tentang fitur seperti apa yang dibutuhkan untuk memudahkan
+              proses pembelajaran.
+            </p>
+            <br />
+            <div class="judul-analisis">1. Kebutuhan pengguna</div>
+            <ul>
+              <li>
+                - Siswa dapat mencari informasi mengenai materi pelajaran atau
+                topik lain
+              </li>
+              <li>
+                - Siswa dapat menginput gambar untuk mencari informasi mengenai
+                gambar tersebut
+              </li>
+              <li>
+                - Siswa dapat menambahkan catatan dan mendapatkab notifikasi
+                catatan tersebut
+              </li>
+              <li>- Siswa dapat bermain game edukasi</li>
+              <li>- Siswa dapat menggunakan voice chat</li>
+              <li>
+                - Siswa dapat mengetahui informasi tentang developer, sekolah,
+                dan aplikasi
+              </li>
+            </ul>
+            <br />
+            <div class="judul-analisis">2. Kebutuhan sistem</div>
+            <ul>
+              <li>
+                - Sistem dapat memberikan informasi mengenai informasi yang
+                diberikan oleh pengguna
+              </li>
+              <li>
+                - Sistem dapat menampilkan informasi mengenai gambar yang
+                diinput oleh pengguna
+              </li>
+              <li>
+                - Sistem dapat menyimpan catatan yang diinput oleh pengguna dan
+                menampilkan notifikasi catatan tersebut
+              </li>
+              <li>- Sistem dapat membaca inputan user berdasarkan suara</li>
+            </ul>
+            <br />
+            <p>
+              Selain itu, kebutuhan sistem juga dibagi menjadi 2 bagian, yaitu :
+            </p>
+            <ul>
+              <li>2.1 Kebutuhan perangkat lunak (software)</li>
+              <p>
+                Spesifikasi komponen perangkat lunak yang digunakan untuk
+                pembuatan aplikasi ini adalah sebagai berikut:
+              </p>
+              <li>1. Sistem operasi windows 10 atau 11</li>
+              <li>2. Visual Studio Code</li>
+              <li>3. Emulator android</li>
+              <li>4. Web browser</li>
+              <li>5. Figma</li>
+              <li>6. UML</li>
+              <li>7. Bahasa pemrograman dart dan framework flutter</li>
+              <li>
+                8. Bahasa markup HTML, CSS, dan bahasa pemrograman Javascript
+              </li>
+              <br />
+              <li>2.2 Kebutuhan perangkat keras (hardware)</li>
+              <p>
+                Spesifikasi komponen perangkat keras yang digunakan untuk
+                pembuatan aplikasi ini adalah sebagai berikut:
+              </p>
+              <li>1. PC atau laptop dengan processor i3 generasi 11</li>
+              <li>2. RAM 8 GB</li>
+              <li>3. SSD 256 GB</li>
+              <li>4. Keyboard dan mouse sebagai piranti input</li>
+              <li>5. Smartphone dengan minimal versi android 4.4 KitKat</li>
+            </ul>
+            <br />
+            <div class="judul-analisis">3. Kebutuhan fungsional</div>
+            <p>
+              Kebutuhan fungsional mendeskripsikan layanan, fitur atau fungsi
+              yang disediakan oleh sistem untuk pengguna agar dapat sistem yang
+              dibangun dapat sesuai. Adapaun kebutuhan fungsional yang dapat
+              diuraikan yaitu :
+            </p>
+            <ul>
+              <li>- Menyediakan fitur chat berbasis teks</li>
+              <li>- Menyediakan fitur chat berbasis gambar</li>
+              <li>- Menyediakan fitur catatan dan notifikasi</li>
+              <li>- Menyediakan fitur game edukasi</li>
+              <li>
+                - Menyediakan fitur informasi tentang aplikasi, sekolah, dan
+                developer
+              </li>
+              <li>- Menyediakan fitur voice chat untuk chat berbasis teks</li>
+            </ul>
+            <br />
+            <div class="judul-analisis">4. Kebutuhan non-fungsional</div>
+            <p>
+              Kebutuhan non-fungsional mendeskripsikan apa saja yang menjadi
+              batasan terhadap kebutuhan perancangan sistem. Adapun kebutuhan
+              non-fungsional dari sistem ini dibagi menjadi beberapa bagian
+              yaitu, sebagai berikut :
+            </p>
+            <br />
+            <ul>
+              <li>4.1 Karakteristik pengguna</li>
+              <li>
+                Karakteristik pengguna adalah diperuntukan untuk siswa/siswi dan
+                guru SMA Negeri 1 Ambon. Dengan adanya sistem ini diharapkan
+                bisa mempermudah proses pembelajaran yang modern dan Interaktif.
+              </li>
+              <br />
+              <li>4.2 Lingkungan operasi</li>
+              <li>
+                Persyaratan lingkungan operasi untuk menjalankan sistem ini
+                adalah sebagai berikut :
+              </li>
+              <li>- Tempat penelitian berada di SMA Negeri 1 Ambon</li>
+              <li>
+                - Untuk menjalankan aplikasi, membutuhkan Smartphone android
+                minimal versi android 4.4 KitKat
+              </li>
+              <br />
+              <li>4.3 Asumsi dan ketergantungan</li>
+              <li>
+                - Sistem dapat memberikan jawaban berdasarkan prompt user, jika
+                prompt mengandung unsur negatif maka akan muncul pemberitahuan
+              </li>
+              <li>
+                Fitur chat akan berfungsi jika sistem terhubung dengan jaringan
+                internet
+              </li>
+              <li>
+                Sistem hanya bisa digunakan pada perangkat android dengan
+                minimal versi android 4.4 KitKat
+              </li>
+              <li>
+                Sistem hanya akan memberikan notifikasi catatan jika izin
+                notifikasi sudah disetujui
+              </li>
+              <li>
+                Sistem hanya akan mendengar inputan suara user jika izin
+                mikrofon sudah disetujui
+              </li>
+              <br />
+              <li>4.4 Batasan perancangan dan implementasi</li>
+              <li>
+                Bagian ini digunakan sebagai penentu batasan sistem agar
+                penelitian ini menjadi lebih terarah dan berjalan sesuai
+                harapan. Adapun batasan sistem adalah sebagai berikut :
+              </li>
+              <li>
+                - Bahasa pemrograman yang digunakan adalah Dart dan framework
+                flutter, serta HTML, CSS, Javascript
+              </li>
+              <li>
+                - Tools untuk perancangan UI (User Interface) yang digunakan
+                adalah figma
+              </li>
+              <li>
+                - Tools untuk kode editor yang digunakan adalah Visual Studio
+                Code
+              </li>
+              <li>
+                - Tools untuk perancangan diagram dan model adalah UML (Unified
+                Modeling Language)
+              </li>
+              <li>
+                - Implementasi menggunakan perangkat android dengan minimal
+                versi android 4.4 KitKat
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content__inner" id="tab-4">
+          <div class="page">
+            <!-- design -->
+            <div class="judul-analisis">Perancangan dan pemodelan sistem</div>
+            <p>
+              Setelah tahap analisis kebutuhan sistem selesai dilakukan, maka
+              analis sistem telah mendapatkan gambaran dengan jelas apa yang
+              harus dikerjakan. Tiba waktunya sekarang bagi analis sistem untuk
+              memikirkan bagaimana membentuk sistem tersebut. Tahap ini disebut
+              dengan perancangan sistem. Sedangkan pemodelan sistem, ini
+              berkaitan dengan pembuatan model visual atau representasi abstrak
+              dari sistem yang akan dibangun.
+            </p>
+            <br />
+            <div class="judul-analisis">
+              1. Pemodelan sistem dengan Unified Modeling Language (UML)
+            </div>
+            <p>
+              UML adalah bahasa standar yang digunakan untuk mendokumentasikan,
+              merancang, dan memodelkan sistem perangkat lunak. UML menyediakan
+              seperangkat notasi grafis yang digunakan untuk menggambarkan
+              berbagai aspek dari sistem, termasuk struktur, fungsi, dan
+              interaksi antar komponen sistem, berikut adalah adalah rancangan
+              diagram nya :
+            </p>
+            <div class="judul-analisis">1.1 Use Case diagram</div>
+            <img class="chat" src="images/use case.png" alt="" />
+            <div class="judul-analisis">1.2 Activity diagram</div>
+            <div class="judul-analisis">1.3 Sequence diagram</div>
+            <br />
+            <div class="judul-analisis">2. Perancangan User Interface (UI)</div>
+            <p>
+              User Interface atau antarmuka pengguna adalah tampilan visual
+              sebuah produk yang menghubungkan sistem dengan pengguna (user).
+              Tools yang digunakan untuk desain user interface pada penelitian
+              ini adalah Figma. Tahap ini akan dibagi menjadi 3 bagian yaitu
+              wireframe, mockup, dan prototype.
+            </p>
+            <img src="images/detail wireframe-mockup-prototype.png" alt="" />
+            <img
+              src="images/wireframe-mockup-prototype.png"
+              alt=""
+            /><br /><br />
+            <div class="judul-analisis">2.1 Wireframe</div>
+            <p>
+              Wireframe adalah representasi visual sederhana dari struktur
+              tampilan dan tata letak aplikasi. Wireframe adalah skema dasar
+              yang menampilkan elemen tanpa semua detail. Wireframe menampilkan
+              rendering dasar yang pada umumnya berwarna hitam dan putih atau
+              abu-abu. Wireframe berfokus pada “gambaran besar” mengenai
+              tampilan produk.
+            </p>
+            <p>List menu 1</p>
+            <img
+              class="chat"
+              src="images/wireframe list menu 1.png"
+              alt=""
+            /><br /><br />
+            <p>List menu 2</p>
+            <img
+              class="chat"
+              src="images/wireframe list menu 2.png"
+              alt=""
+            /><br /><br />
+            <p>List menu 3</p>
+            <img
+              class="chat"
+              src="images/wireframe list menu 3.png"
+              alt=""
+            /><br /><br />
+            <p>List menu 4</p>
+            <img
+              class="chat"
+              src="images/wireframe list menu 4.png"
+              alt=""
+            /><br /><br />
+            <p>Chat menu</p>
+            <img
+              class="chat"
+              src="images/wireframe chat menu.png"
+              alt=""
+            /><br /><br />
+            <p>Chat with image menu 1</p>
+            <img
+              class="chat"
+              src="images/wireframe chat with image 1.png"
+              alt=""
+            /><br /><br />
+            <p>Chat with image menu 2</p>
+            <img
+              class="chat"
+              src="images/wireframe chat with image 2.png"
+              alt=""
+            /><br /><br />
+            <p>Notes menu 1</p>
+            <img
+              class="chat"
+              src="images/wireframe notes 1.png"
+              alt=""
+            /><br /><br />
+            <p>Notes menu 2</p>
+            <img
+              class="chat"
+              src="images/wireframe notes 2.png"
+              alt=""
+            /><br /><br />
+            <p>Notes menu 3</p>
+            <img
+              class="chat"
+              src="images/wireframe notes menu 3.png"
+              alt=""
+            /><br /><br />
+            <p>Notes menu 4</p>
+            <img
+              class="chat"
+              src="images/wireframe notes menu 4.png"
+              alt=""
+            /><br /><br />
+            <p>Gallery menu</p>
+            <img
+              class="chat"
+              src="images/wireframe gallery.png"
+              alt=""
+            /><br /><br />
+            <p>Education menu</p>
+            <img
+              class="chat"
+              src="images/wireframe education games.png"
+              alt=""
+            /><br /><br />
+            <p>Connect with us menu</p>
+            <img
+              class="chat"
+              src="images/wireframe connect with us.png"
+              alt=""
+            /><br /><br />
+            <p>Exit menu</p>
+            <img
+              class="chat"
+              src="images/wireframe exit menu.png"
+              alt=""
+            /><br /><br />
+            <p>About dev menu</p>
+            <img
+              class="chat"
+              src="images/wireframe about dev.png"
+              alt=""
+            /><br /><br />
+            <p>About SMKN 7 Ambon menu</p>
+            <img
+              class="chat"
+              src="images/wireframe about smk.png"
+              alt=""
+            /><br /><br />
+            <p>About app menu</p>
+            <img
+              class="chat"
+              src="images/wireframe about app.png"
+              alt=""
+            /><br /><br />
+            <div class="judul-analisis">2.2 Mockup</div>
+            <p>
+              Mockup adalah representasi visual yang lebih detail, termasuk
+              elemen desain seperti warna, tipografi, dan ilustrasi. Mockup
+              adalah tahapan yang akan dilakukan selanjutnya ketika wireframe
+              telah di approve. Mockup menampilkan rendering statis namun
+              realistis tentang seperti apa tampilan produk atau fitur dan
+              bagaimana produk atau fitur itu akan digunakan nantinya. Berikut
+              adalah hasil desain mockup yang diajukan :
+            </p>
+            <p>List menu 1</p>
+            <img
+              class="chat"
+              src="images/mockup list menu 1.png"
+              alt=""
+            /><br /><br />
+            <p>List menu 2</p>
+            <img
+              class="chat"
+              src="images/mockup list menu 2.png"
+              alt=""
+            /><br /><br />
+            <p>List menu 3</p>
+            <img
+              class="chat"
+              src="images/mockup list menu 3.png"
+              alt=""
+            /><br /><br />
+            <p>List menu 4</p>
+            <img
+              class="chat"
+              src="images/mockup list menu 4.png"
+              alt=""
+            /><br /><br />
+            <p>Chat menu</p>
+            <img class="chat" src="images/mockup chat menu.png" alt="" />
+            <br /><br />
+            <p>Chat with image menu 1</p>
+            <img
+              class="chat"
+              src="images/mockup chat with image menu 1.png"
+              alt=""
+            /><br /><br />
+            <p>Chat with image menu 2</p>
+            <img
+              class="chat"
+              src="images/mockup chat with image menu 2.png"
+              alt=""
+            /><br /><br />
+            <p>Notes menu 1</p>
+            <img
+              class="chat"
+              src="images/mockup notes menu 1.png"
+              alt=""
+            /><br /><br />
+            <p>Notes menu 2</p>
+            <img
+              class="chat"
+              src="images/mockup notes menu 2.png"
+              alt=""
+            /><br /><br />
+            <p>Notes menu 3</p>
+            <img
+              class="chat"
+              src="images/mockup notes menu 3.png"
+              alt=""
+            /><br /><br />
+            <p>Notes menu 4</p>
+            <img
+              class="chat"
+              src="images/mockup notes menu 4.png"
+              alt=""
+            /><br /><br />
+            <p>Gallery menu 1</p>
+            <img
+              class="chat"
+              src="images/mockup gallery menu 1.png"
+              alt=""
+            /><br /><br />
+            <p>Gallery menu 2</p>
+            <img
+              class="chat"
+              src="images/mockup gallery menu 2.png"
+              alt=""
+            /><br /><br />
+            <p>Gallery menu 3</p>
+            <img
+              class="chat"
+              src="images/mockup gallery menu 3.png"
+              alt=""
+            /><br /><br />
+            <p>Education Games menu</p>
+            <img
+              class="chat"
+              src="images/mockup education games menu.png"
+              alt=""
+            /><br /><br />
+            <p>Education connect with us</p>
+            <img
+              class="chat"
+              src="images/mockup connect with us.png"
+              alt=""
+            /><br /><br />
+            <p>Exit menu</p>
+            <img
+              class="chat"
+              src="images/mockup exit menu.png"
+              alt=""
+            /><br /><br />
+            <p>About dev menu</p>
+            <img
+              class="chat"
+              src="images/mockup about dev.png"
+              alt=""
+            /><br /><br />
+            <p>About SMKN 7 Ambon menu</p>
+            <img
+              class="chat"
+              src="images/mockup about smk.png"
+              alt=""
+            /><br /><br />
+            <p>About app menu</p>
+            <img
+              class="chat"
+              src="images/mockup about app.png"
+              alt=""
+            /><br /><br />
+
+            <div class="judul-analisis">2.3 Prototype</div>
+            <p>
+              Prototype adalah representasi interaktif yang mensimulasikan
+              fungsi dan interaksi pengguna. Prototype merupakan konsep
+              clickable yang sudah dapat merespons berbagai perintah.
+            </p>
+            <br />
+            <p>
+              Berikut link demonstrasi prototype dari sistem yang dirancang:
+            </p>
+            <a
+              href="https://www.figma.com/file/PRkjwpdm1K36ufJXQr89lH/Project-Akhir---ByteBrain---Chairil-Ali?type=design&node-id=0%3A1&mode=design&t=vuNwl2DP4dNqDWpl-1"
+              target="_blank"
+              >link prototype</a
+            >
+          </div>
+        </div>
+        <div class="content__inner" id="tab-5">
+          <div class="page">
+            <!-- implementation -->
+          </div>
+        </div>
+
+        <div class="content__inner" id="tab-6">
+          <div class="page">
+            <!-- testing -->
+          </div>
+        </div>
+        <div class="content__inner" id="tab-7">
+          <div class="page">
+            <!-- deployment -->
+          </div>
+        </div>
+        <div class="content__inner" id="tab-8">
+          <div class="page">
+            <!-- maintenance -->
+          </div>
+        </div>
+
+        <div class="content__inner" id="tab-9">
+          <div class="page">
+            <p class="container-end">Thank You 😊</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5, random: false },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>
