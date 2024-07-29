@@ -45,7 +45,10 @@
 
 .container p span.typed-text {
   font-weight: bold;
-  color: #006c8a;
+  color: #030303;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke-color: #ffffff;
 }
 .container p span.cursor {
   display: inline-block;
