@@ -98,6 +98,14 @@ img {
   width: 100%;
 }
 
+.logo {
+  /* make it responsive */
+  display: block;
+  margin: 0 auto;
+  width: 317px;
+  height: 127px;
+}
+
 .container-judul {
   display: flex;
   align-items: center;
